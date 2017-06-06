@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsTickets</title>
+    <title>RailsTickets/<%= controller.action_name%></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,7 @@
   </head>
 
   <body>
-    <%= yield %>
+<h1>Hello<h1>
+<%= yield %>
   </body>
 </html>
