@@ -1,22 +1,13 @@
 <html>
 <head>
-	<title></title>
+	<title>All Ads</title>
 </head>
 <body>
-<p>
-	<b>Name:</b>
-</p>
-<p>
-	<b>Description:</b>
-</p>
-<p>
-	<b>Price:</b>
-</p>
-<p>
-	<b>Seller:</b>
-</p>
-<p>
-	<b>Email:</b>
-</p>
+<h1>All Ads</h1>
+<ul>
+<% for ad in @ads %>
+<li><a href="/ads/<%= ad.id %>"><%= ad.name %></a></li>
+<% end %>
+</ul>
 </body>
 </html>
